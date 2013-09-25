@@ -23,6 +23,7 @@
 		448C28F417F13A470097A08D /* CS408_WarmupAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 448C28F317F13A470097A08D /* CS408_WarmupAppTests.m */; };
 		44F5B65C17F339CE001F3593 /* PlacesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F5B65B17F339CE001F3593 /* PlacesController.m */; };
 		44F5B65F17F33D70001F3593 /* Place.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F5B65E17F33D70001F3593 /* Place.m */; };
+		44F5B66217F34D9B001F3593 /* PlacesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F5B66117F34D9B001F3593 /* PlacesViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		44F5B65B17F339CE001F3593 /* PlacesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesController.m; sourceTree = "<group>"; };
 		44F5B65D17F33D70001F3593 /* Place.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Place.h; sourceTree = "<group>"; };
 		44F5B65E17F33D70001F3593 /* Place.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Place.m; sourceTree = "<group>"; };
+		44F5B66017F34D9B001F3593 /* PlacesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacesViewController.h; sourceTree = "<group>"; };
+		44F5B66117F34D9B001F3593 /* PlacesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +124,8 @@
 				448C28D717F13A470097A08D /* AppDelegate.h */,
 				448C28D817F13A470097A08D /* AppDelegate.m */,
 				448C28DA17F13A470097A08D /* Main.storyboard */,
+				44F5B66017F34D9B001F3593 /* PlacesViewController.h */,
+				44F5B66117F34D9B001F3593 /* PlacesViewController.m */,
 				44F5B65A17F339CE001F3593 /* PlacesController.h */,
 				44F5B65B17F339CE001F3593 /* PlacesController.m */,
 				44F5B65D17F33D70001F3593 /* Place.h */,
@@ -262,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44F5B66217F34D9B001F3593 /* PlacesViewController.m in Sources */,
 				44F5B65C17F339CE001F3593 /* PlacesController.m in Sources */,
 				448C28DF17F13A470097A08D /* ViewController.m in Sources */,
 				448C28D917F13A470097A08D /* AppDelegate.m in Sources */,

@@ -12,10 +12,14 @@
 -(id)initPlace:(NSString *)name campus:(NSString *)campus {
     self = [super init];
     if(self) {
-        _name = name;
-        _campus = campus;
+//        _name = name;
+//        _campus = campus;
         return self;
     }
     return nil;
 }
+
+@synthesize name;
+@synthesize campus;
+
 @end

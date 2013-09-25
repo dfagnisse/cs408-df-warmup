@@ -7,12 +7,39 @@
 //
 
 #import "AppDelegate.h"
+#import "Place.h"
+#import "PlacesViewController.h"
 
-@implementation AppDelegate
+@implementation AppDelegate {
+    NSMutableArray *places;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+//    // Override point for customization after application launch.
+//    places = [NSMutableArray arrayWithCapacity:20];
+//	Place *place = [[Place alloc] init];
+//	place.name = @"The Loop";
+//	place.campus = @"West";
+////	player.rating = 4;
+//	[places addObject:place];
+//	place = [[Place alloc] init];
+//	place.name = @"The Bistro";
+//	place.campus = @"Central";
+////	player.rating = 5;
+//	[places addObject:place];
+//	place = [[Place alloc] init];
+//	place.name = @"Great Hall";
+//	place.campus = @"West";
+////	player.rating = 2;
+//	[places addObject:place];
+//	UITabBarController *tabBarController =
+//    (UITabBarController *)self.window.rootViewController;
+//	UINavigationController *navigationController =
+//    [[tabBarController viewControllers] objectAtIndex:0];
+//	PlacesViewController *placesViewController =
+//    [[navigationController viewControllers] objectAtIndex:0];
+//	placesViewController.places = places;
     return YES;
 }
 							
