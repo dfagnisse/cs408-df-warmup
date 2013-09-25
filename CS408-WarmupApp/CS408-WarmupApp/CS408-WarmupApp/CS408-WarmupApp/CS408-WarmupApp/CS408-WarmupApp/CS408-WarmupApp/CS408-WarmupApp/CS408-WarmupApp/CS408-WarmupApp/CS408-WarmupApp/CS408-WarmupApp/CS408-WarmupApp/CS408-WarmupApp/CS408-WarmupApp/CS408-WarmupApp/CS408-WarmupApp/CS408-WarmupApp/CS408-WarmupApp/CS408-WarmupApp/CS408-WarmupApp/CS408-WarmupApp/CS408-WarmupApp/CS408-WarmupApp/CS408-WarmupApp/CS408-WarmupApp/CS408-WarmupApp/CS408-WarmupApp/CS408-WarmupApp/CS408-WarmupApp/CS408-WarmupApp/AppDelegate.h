@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  AppDelegate.h
 //  CS408-WarmupApp
 //
 //  Created by Dagbedji Fagnisse on 9/23/13.
@@ -8,9 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController {
-    IBOutlet UILabel *usernameLabel;
-    IBOutlet UILabel *passwordLabel;
-}
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
+
+@property (strong, nonatomic) UIWindow *window;
 
 @end

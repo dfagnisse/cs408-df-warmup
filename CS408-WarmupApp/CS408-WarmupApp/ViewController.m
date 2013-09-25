@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+- (IBAction)authenticateUser:(id)sender;
 
 @end
 
@@ -18,6 +19,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    usernameLabel.text = @"Username";
+    passwordLabel.text = @"Password";
 }
 
 - (void)didReceiveMemoryWarning
@@ -26,4 +29,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)authenticateUser:(id)sender {
+    usernameLabel.text = @"Hey Deo";
+}
 @end

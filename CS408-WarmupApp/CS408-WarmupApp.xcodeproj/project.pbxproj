@@ -21,6 +21,8 @@
 		448C28EA17F13A470097A08D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 448C28CC17F13A470097A08D /* UIKit.framework */; };
 		448C28F217F13A470097A08D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 448C28F017F13A470097A08D /* InfoPlist.strings */; };
 		448C28F417F13A470097A08D /* CS408_WarmupAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 448C28F317F13A470097A08D /* CS408_WarmupAppTests.m */; };
+		44F5B65C17F339CE001F3593 /* PlacesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F5B65B17F339CE001F3593 /* PlacesController.m */; };
+		44F5B65F17F33D70001F3593 /* Place.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F5B65E17F33D70001F3593 /* Place.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		448C28EF17F13A470097A08D /* CS408-WarmupAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CS408-WarmupAppTests-Info.plist"; sourceTree = "<group>"; };
 		448C28F117F13A470097A08D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		448C28F317F13A470097A08D /* CS408_WarmupAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CS408_WarmupAppTests.m; sourceTree = "<group>"; };
+		44F5B65A17F339CE001F3593 /* PlacesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacesController.h; sourceTree = "<group>"; };
+		44F5B65B17F339CE001F3593 /* PlacesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesController.m; sourceTree = "<group>"; };
+		44F5B65D17F33D70001F3593 /* Place.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Place.h; sourceTree = "<group>"; };
+		44F5B65E17F33D70001F3593 /* Place.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Place.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,10 @@
 				448C28D717F13A470097A08D /* AppDelegate.h */,
 				448C28D817F13A470097A08D /* AppDelegate.m */,
 				448C28DA17F13A470097A08D /* Main.storyboard */,
+				44F5B65A17F339CE001F3593 /* PlacesController.h */,
+				44F5B65B17F339CE001F3593 /* PlacesController.m */,
+				44F5B65D17F33D70001F3593 /* Place.h */,
+				44F5B65E17F33D70001F3593 /* Place.m */,
 				448C28DD17F13A470097A08D /* ViewController.h */,
 				448C28DE17F13A470097A08D /* ViewController.m */,
 				448C28E017F13A470097A08D /* Images.xcassets */,
@@ -199,6 +209,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Dagbedji Fagnisse";
 				TargetAttributes = {
+					448C28C417F13A470097A08D = {
+						DevelopmentTeam = HNACG3848H;
+					};
 					448C28E517F13A470097A08D = {
 						TestTargetID = 448C28C417F13A470097A08D;
 					};
@@ -249,8 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44F5B65C17F339CE001F3593 /* PlacesController.m in Sources */,
 				448C28DF17F13A470097A08D /* ViewController.m in Sources */,
 				448C28D917F13A470097A08D /* AppDelegate.m in Sources */,
+				44F5B65F17F33D70001F3593 /* Place.m in Sources */,
 				448C28D517F13A470097A08D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,10 +393,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CS408-WarmupApp/CS408-WarmupApp-Prefix.pch";
 				INFOPLIST_FILE = "CS408-WarmupApp/CS408-WarmupApp-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -391,10 +409,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CS408-WarmupApp/CS408-WarmupApp-Prefix.pch";
 				INFOPLIST_FILE = "CS408-WarmupApp/CS408-WarmupApp-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -460,6 +481,7 @@
 				448C28F917F13A470097A08D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		448C28FA17F13A470097A08D /* Build configuration list for PBXNativeTarget "CS408-WarmupAppTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +490,7 @@
 				448C28FC17F13A470097A08D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
