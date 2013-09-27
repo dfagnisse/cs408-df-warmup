@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController {
-    IBOutlet UILabel *usernameLabel;
-    IBOutlet UILabel *passwordLabel;
-}
+@interface ViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UILabel *loginPrompt;
+@property (weak, nonatomic) IBOutlet UITextField *usernameInput;
+@property (weak, nonatomic) IBOutlet UITextField *passwordInput;
+
+- (IBAction)authenticateUser:(id)sender;
 
 @end

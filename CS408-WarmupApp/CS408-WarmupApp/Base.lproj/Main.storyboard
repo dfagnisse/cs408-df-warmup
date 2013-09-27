@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="usename" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GF4-MW-VT5">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GF4-MW-VT5">
                                 <rect key="frame" x="70" y="137" width="83" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -48,39 +48,31 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="authenticateUser:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="OJz-ef-yXp"/>
+                                    <action selector="authenticateUser:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="BOk-z5-S4S"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76N-he-1hp">
+                                <rect key="frame" x="64" y="77" width="202" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="login" destination="76N-he-1hp" id="lZQ-HS-RB2"/>
+                        <outlet property="loginPrompt" destination="76N-he-1hp" id="rLR-Rq-dGr"/>
+                        <outlet property="passwordInput" destination="ceZ-g3-pTl" id="J45-5t-35Z"/>
                         <outlet property="passwordLabel" destination="Vtd-4c-D9X" id="o5o-kb-MLX"/>
+                        <outlet property="prompt" destination="76N-he-1hp" id="M39-69-jo4"/>
+                        <outlet property="usernameInput" destination="9hI-2p-955" id="UzH-qD-7RE"/>
                         <outlet property="usernameLabel" destination="GF4-MW-VT5" id="agh-Yf-1yE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-9" y="47"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="gKk-wz-qya">
-            <objects>
-                <tabBarController definesPresentationContext="YES" id="Ght-bP-6dv" sceneMemberID="viewController">
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="a4O-Mm-Xh9">
-                        <rect key="frame" x="129" y="330" width="163" height="49"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="1hz-YH-VWe" kind="relationship" relationship="viewControllers" id="UpJ-g4-Mi2"/>
-                        <segue destination="mAI-5P-M1I" kind="relationship" relationship="viewControllers" id="2Zb-3Z-eZD"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cPf-gq-4SQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="432" y="47"/>
         </scene>
         <!--Places View Controller - Places-->
         <scene sceneID="f9v-Et-lh4">

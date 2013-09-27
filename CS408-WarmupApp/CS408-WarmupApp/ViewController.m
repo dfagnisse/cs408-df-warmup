@@ -8,19 +8,16 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
-- (IBAction)authenticateUser:(id)sender;
-
-@end
 
 @implementation ViewController
+
+//@synthesize loginPrompt, usernameInput, passwordInput;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    usernameLabel.text = @"Username";
-    passwordLabel.text = @"Password";
+//    loginPrompt.text= @"Please Log in";
 }
 
 - (void)didReceiveMemoryWarning
@@ -30,6 +27,6 @@
 }
 
 - (IBAction)authenticateUser:(id)sender {
-    usernameLabel.text = @"Hey Deo";
+//    loginPrompt.text= @"Failed Login";
 }
 @end

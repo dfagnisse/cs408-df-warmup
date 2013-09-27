@@ -7,12 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "Place.h"
-#import "PlacesViewController.h"
 
-@implementation AppDelegate {
-    NSMutableArray *places;
-}
+@implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
