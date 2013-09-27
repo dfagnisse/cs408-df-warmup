@@ -13,6 +13,7 @@
 @end
 
 @implementation ViewController
+@synthesize loginPrompt, usernameInput, passwordInput;
 
 - (void)viewDidLoad
 {
@@ -26,4 +27,17 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)authenticateUser:(id)sender {
+    NSString *message = [[NSString alloc] initWithFormat:@"Hello %@", [usernameInput text] ];
+    [loginPrompt setText:message];
+}
+- (IBAction)dismissKeyboard:(id)sender {
+    [usernameInput resignFirstResponder];
+    [passwordInput resignFirstResponder];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textfield {
+    [textfield resignFirstResponder];
+    return YES;
+}
 @end
