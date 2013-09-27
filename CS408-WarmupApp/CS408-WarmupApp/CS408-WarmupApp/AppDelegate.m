@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  CS408-WarmupApp
+//  CS408-warmupApp
 //
-//  Created by Dagbedji Fagnisse on 9/23/13.
+//  Created by Dagbedji Fagnisse on 9/27/13.
 //  Copyright (c) 2013 Dagbedji Fagnisse. All rights reserved.
 //
 
