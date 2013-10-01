@@ -7,12 +7,19 @@
 //
 
 #import "AppDelegate.h"
+#import "PlacesDatabase.h"
+#import "PlaceInfo.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    NSLog(@"Hi Deo");
+    NSArray *placesInfos = [PlacesDatabase database].placeInfos;
+    for (PlaceInfo *info in placesInfos) {
+        NSLog(@"%d: %@, %@", info.uniqueId, info.name, info.campus);
+    }
     return YES;
 }
 							

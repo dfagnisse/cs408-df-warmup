@@ -21,6 +21,10 @@
 		44B26E1817F5624800743B1B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44B26DFA17F5624800743B1B /* UIKit.framework */; };
 		44B26E2017F5624800743B1B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44B26E1E17F5624800743B1B /* InfoPlist.strings */; };
 		44B26E2217F5624800743B1B /* CS408WarmupAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B26E2117F5624800743B1B /* CS408WarmupAppTests.m */; };
+		44D135D117FA83290062799C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 44D135D017FA83290062799C /* libsqlite3.dylib */; };
+		44D135D417FA84070062799C /* PlaceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D135D317FA84070062799C /* PlaceInfo.m */; };
+		44D135D717FA858B0062799C /* PlacesDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D135D617FA858B0062799C /* PlacesDatabase.m */; };
+		44D135D917FA92570062799C /* places.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 44D135D817FA92570062799C /* places.sqlite3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,12 @@
 		44B26E1D17F5624800743B1B /* CS408WarmupAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CS408WarmupAppTests-Info.plist"; sourceTree = "<group>"; };
 		44B26E1F17F5624800743B1B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		44B26E2117F5624800743B1B /* CS408WarmupAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CS408WarmupAppTests.m; sourceTree = "<group>"; };
+		44D135D017FA83290062799C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		44D135D217FA84070062799C /* PlaceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceInfo.h; sourceTree = "<group>"; };
+		44D135D317FA84070062799C /* PlaceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceInfo.m; sourceTree = "<group>"; };
+		44D135D517FA858B0062799C /* PlacesDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacesDatabase.h; sourceTree = "<group>"; };
+		44D135D617FA858B0062799C /* PlacesDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesDatabase.m; sourceTree = "<group>"; };
+		44D135D817FA92570062799C /* places.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; name = places.sqlite3; path = ../../places.sqlite3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44D135D117FA83290062799C /* libsqlite3.dylib in Frameworks */,
 				44B26DF917F5624800743B1B /* CoreGraphics.framework in Frameworks */,
 				44B26DFB17F5624800743B1B /* UIKit.framework in Frameworks */,
 				44B26DF717F5624800743B1B /* Foundation.framework in Frameworks */,
@@ -101,6 +112,7 @@
 		44B26DF517F5624800743B1B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				44D135D017FA83290062799C /* libsqlite3.dylib */,
 				44B26DF617F5624800743B1B /* Foundation.framework */,
 				44B26DF817F5624800743B1B /* CoreGraphics.framework */,
 				44B26DFA17F5624800743B1B /* UIKit.framework */,
@@ -112,6 +124,7 @@
 		44B26DFC17F5624800743B1B /* CS408WarmupApp */ = {
 			isa = PBXGroup;
 			children = (
+				44D135D817FA92570062799C /* places.sqlite3 */,
 				44B26E0517F5624800743B1B /* AppDelegate.h */,
 				44B26E0617F5624800743B1B /* AppDelegate.m */,
 				44B26E0817F5624800743B1B /* Main.storyboard */,
@@ -119,6 +132,10 @@
 				44B26E0C17F5624800743B1B /* ViewController.m */,
 				44B26E0E17F5624800743B1B /* Images.xcassets */,
 				44B26DFD17F5624800743B1B /* Supporting Files */,
+				44D135D217FA84070062799C /* PlaceInfo.h */,
+				44D135D317FA84070062799C /* PlaceInfo.m */,
+				44D135D517FA858B0062799C /* PlacesDatabase.h */,
+				44D135D617FA858B0062799C /* PlacesDatabase.m */,
 			);
 			path = CS408WarmupApp;
 			sourceTree = "<group>";
@@ -229,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44B26E0F17F5624800743B1B /* Images.xcassets in Resources */,
+				44D135D917FA92570062799C /* places.sqlite3 in Resources */,
 				44B26E0117F5624800743B1B /* InfoPlist.strings in Resources */,
 				44B26E0A17F5624800743B1B /* Main.storyboard in Resources */,
 			);
@@ -249,9 +267,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44D135D717FA858B0062799C /* PlacesDatabase.m in Sources */,
 				44B26E0D17F5624800743B1B /* ViewController.m in Sources */,
 				44B26E0717F5624800743B1B /* AppDelegate.m in Sources */,
 				44B26E0317F5624800743B1B /* main.m in Sources */,
+				44D135D417FA84070062799C /* PlaceInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +480,7 @@
 				44B26E2717F5624800743B1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44B26E2817F5624800743B1B /* Build configuration list for PBXNativeTarget "CS408WarmupAppTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +489,7 @@
 				44B26E2A17F5624800743B1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
