@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PlacesListViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *loginPrompt;
 @property (weak, nonatomic) IBOutlet UITextField *usernameInput;
 @property (weak, nonatomic) IBOutlet UITextField *passwordInput;
+@property (strong, nonatomic) PlacesListViewController *myPlacesListVC;
+
 - (IBAction)authenticateUser:(id)sender;
 
 @end

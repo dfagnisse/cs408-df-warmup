@@ -32,7 +32,7 @@ static PlacesDatabase *_database;
     sqlite3_close(_database);
 }
 
-- (NSArray *)placeInfos {
+- (NSArray *)placesInfos {
     
     NSMutableArray *retval = [[NSMutableArray alloc] init];
     NSString *query = @"SELECT id, name, campus FROM places ORDER BY campus";

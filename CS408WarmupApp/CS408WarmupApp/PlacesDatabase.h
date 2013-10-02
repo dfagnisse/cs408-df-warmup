@@ -14,5 +14,5 @@
 }
 
 + (PlacesDatabase *)database;
-- (NSArray *)placeInfos;
+- (NSArray *)placesInfos;
 @end

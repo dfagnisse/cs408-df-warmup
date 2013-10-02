@@ -25,6 +25,7 @@
 		44D135D417FA84070062799C /* PlaceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D135D317FA84070062799C /* PlaceInfo.m */; };
 		44D135D717FA858B0062799C /* PlacesDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D135D617FA858B0062799C /* PlacesDatabase.m */; };
 		44D135D917FA92570062799C /* places.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 44D135D817FA92570062799C /* places.sqlite3 */; };
+		44D135DC17FB8DA30062799C /* PlacesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D135DB17FB8DA30062799C /* PlacesListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		44D135D517FA858B0062799C /* PlacesDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacesDatabase.h; sourceTree = "<group>"; };
 		44D135D617FA858B0062799C /* PlacesDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesDatabase.m; sourceTree = "<group>"; };
 		44D135D817FA92570062799C /* places.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; name = places.sqlite3; path = ../../places.sqlite3; sourceTree = "<group>"; };
+		44D135DA17FB8DA30062799C /* PlacesListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacesListViewController.h; sourceTree = "<group>"; };
+		44D135DB17FB8DA30062799C /* PlacesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +139,8 @@
 				44D135D317FA84070062799C /* PlaceInfo.m */,
 				44D135D517FA858B0062799C /* PlacesDatabase.h */,
 				44D135D617FA858B0062799C /* PlacesDatabase.m */,
+				44D135DA17FB8DA30062799C /* PlacesListViewController.h */,
+				44D135DB17FB8DA30062799C /* PlacesListViewController.m */,
 			);
 			path = CS408WarmupApp;
 			sourceTree = "<group>";
@@ -267,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44D135DC17FB8DA30062799C /* PlacesListViewController.m in Sources */,
 				44D135D717FA858B0062799C /* PlacesDatabase.m in Sources */,
 				44B26E0D17F5624800743B1B /* ViewController.m in Sources */,
 				44B26E0717F5624800743B1B /* AppDelegate.m in Sources */,

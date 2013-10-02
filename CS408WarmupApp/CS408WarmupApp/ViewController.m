@@ -7,13 +7,14 @@
 //
 
 #import "ViewController.h"
+#import "PlacesListViewController.h"
 
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
-@synthesize loginPrompt, usernameInput, passwordInput;
+@synthesize loginPrompt, usernameInput, passwordInput, myPlacesListVC;
 
 - (void)viewDidLoad
 {
@@ -28,8 +29,13 @@
 }
 
 - (IBAction)authenticateUser:(id)sender {
-    NSString *message = [[NSString alloc] initWithFormat:@"Hello %@", [usernameInput text] ];
+    if ([[usernameInput text] isEqualToString:@"tester"] && [[passwordInput text] isEqualToString:@"testing"]) {
+        [self performSegueWithIdentifier:@"loggedIn" sender:self];
+    }
+    else {
+    NSString *message = [[NSString alloc] initWithFormat:@"Problem logging in %@", [usernameInput text] ];
     [loginPrompt setText:message];
+    }
 }
 - (IBAction)dismissKeyboard:(id)sender {
     [usernameInput resignFirstResponder];
@@ -39,5 +45,12 @@
 - (BOOL)textFieldShouldReturn:(UITextField *)textfield {
     [textfield resignFirstResponder];
     return YES;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return [myPlacesListVC tableView:tableView cellForRowAtIndexPath:indexPath];
+}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [myPlacesListVC tableView:tableView numberOfRowsInSection:section];
 }
 @end
